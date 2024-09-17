@@ -1,0 +1,31 @@
+.our-capabilities {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--spacer-lvl-4);
+    padding-left: var(--spacer);
+    padding-right: var(--spacer);
+
+    & .card-conteiner {
+        display: flex;
+        margin-top: 40px;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    & .card {
+        display: flex;
+        cursor: pointer;
+        flex-direction: column;
+        width: 410px;
+        height: 260px;
+        gap: var(--spacer-lvl-2);
+        border-radius: 12px;
+        padding: 20px;
+        background-image: radial-gradient(148.61% 147.95% at 17.46% -47.95%, rgba(28, 100, 242, 0.38) 9.34%, rgba(0, 0, 0, 0) 100%), linear-gradient(0deg, #121825, #121825);
+        border: 1px solid;
+        border-image: linear-gradient(142.87deg, #1C64F2 0%, rgba(28, 100, 242, 0) 44.17%);
+    }
+}

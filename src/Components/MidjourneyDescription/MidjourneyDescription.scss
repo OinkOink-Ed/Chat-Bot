@@ -1,0 +1,54 @@
+.midjourney-description {
+    display: flex;
+    padding-left: var(--spacer);
+    padding-right: var(--spacer);
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 60px;
+    justify-content: center;
+
+    & .pictures {
+        flex-basis: 630px;
+        height: 572px;
+        position: relative;
+
+        & :first-child {
+            z-index: 1;
+            position: absolute;
+            top: 0;
+            margin-top: auto;
+            bottom: 0px;
+            margin-bottom: auto;
+        }
+
+        & :nth-child(2) {
+            z-index: 2;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+        }
+
+        & :last-child {
+            z-index: 3;
+            position: absolute;
+            bottom: 0px;
+            margin-left: auto;
+            margin-right: auto;
+            left: 0px;
+            right: 0px;
+        }
+    }
+
+    & .description-conteiner {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        align-self: center;
+        gap: var(--spacer-lvl-2);
+        flex-basis: 520px;
+
+        & .btn {
+            width: fit-content;
+        }
+    }
+}

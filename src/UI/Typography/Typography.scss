@@ -1,0 +1,153 @@
+// Стили шрифтов в зависимости от размеров
+
+.xs-regular {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 16px;
+    font-size: var(--body-xs-regular);
+}
+
+.s-medium {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 500;
+    font-size: var(--body-s-medium);
+    line-height: 18px;
+}
+
+.s-regular {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 18px;
+    font-size: var(--body-s-regular);
+}
+
+.m-regular {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 22px;
+    font-size: var(--bosy-m-regular);
+}
+
+.m-medium {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 500;
+    font-size: var(--body-m-medium);
+    line-height: 22px;
+}
+
+.m-semibold {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 600;
+    line-height: 22px;
+    font-size: var(--body-m-semibold);
+}
+
+.l-medium-italic {}
+
+.l-medium {}
+
+.l-semobold {}
+
+.xl-semibold {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 600;
+    font-size: var(--body-xl-semibold);
+    line-height: 29px;
+    font-style: normal;
+}
+
+.xxl-semibold {}
+
+.input-sm {}
+
+.input-md {}
+
+.button-md {}
+
+.button-sm {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 500;
+    font-size: var(--button-sm);
+    line-height: 20px;
+}
+
+.h1 {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: var(--h1-font-size);
+    line-height: 60px;
+}
+
+.h2 {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 600;
+    font-size: var(--h2-font-size);
+    line-height: 44px;
+    font-style: normal;
+}
+
+.h3 {}
+
+.h4 {}
+
+.h5 {}
+
+.h6 {}
+
+.ibm-plex-sans-thin {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.ibm-plex-sans-extralight {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.ibm-plex-sans-light {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.ibm-plex-sans-thin-italic {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.ibm-plex-sans-extralight-italic {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+}
+
+.ibm-plex-sans-light-italic {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.ibm-plex-sans-regular-italic {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.ibm-plex-sans-medium-italic {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.ibm-plex-sans-bold-italic {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}

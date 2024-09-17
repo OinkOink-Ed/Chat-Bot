@@ -1,0 +1,16 @@
+@use "./styles/default.scss";
+@use "./styles/variables.scss";
+@use "./UI/Typography/Typography.scss";
+@use "./UI/Buttons/Button.scss";
+@use "./UI/Input/MyInput.scss";
+@use "./styles/app.scss";
+@use './Components/Header/header.scss';
+@use './Components/DropDown/DropDown.scss';
+@use './Modules/Chat/Chat.scss';
+@use './Modules/Chat/Components/Description/Description.scss';
+@use './Modules/Chat/Components/Messages/Messages.scss';
+@use './Components/OurCapabilities/OurCapabilities.scss';
+@use './Components/MidjourneyDescription/MidjourneyDescription.scss';
+@use './Components/Footer/Footer.scss';
+
+@use "./styles/media.scss";

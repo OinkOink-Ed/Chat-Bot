@@ -1,0 +1,121 @@
+:root {
+    --gray-scale-1: #616D8D;
+    --gray-scale-2: #313E62;
+    --gray-scale-3: #222B44;
+    --gray-scale-4: #121825;
+    --gray-scale-7: #171E2F;
+    --color-Accent-Primary: #1C64F2;
+    --color-Accent-Primary-Light: #4785FF;
+    --color-Accent-Strong: #073CA4;
+    --color-Accent-Strong-Down: #0E3176;
+    --color-base: #ffffff;
+
+    --spacer: 16px;
+    --spacer-const: 20px;
+    --spacer-lvl-2: 0px;
+    --spacer-lvl-3: 14px;
+    --spacer-lvl-4: 30px;
+    --spacer-lvl-4: 56px;
+    --spacer-lvl-8: 64px;
+
+    --body-xxl-semibold: 20px;
+    --body-xl-semibold: 18px;
+    --body-l-semibold: 14px;
+    --body-l-medium: 14px;
+    --body-l-medium-italic: 14px;
+    --body-m-semibold: 14px;
+    --body-m-medium: 14px;
+    --body-m-regular: 14px;
+    --body-s-medium: 12px;
+    --body-s-regular: 12px;
+    --body-xs-regular: 10px;
+
+    --h1-font-size: 28px;
+    --h2-font-size: 24px;
+    --h3-font-size: 22px;
+    --h4-font-size: 20px;
+    --h5-font-size: 18px;
+    --h6-font-size: 16px;
+
+    --button-sm: 15px;
+    --button-md: 18px;
+    --input-md: 16px;
+    --input-sm: 14px;
+}
+
+// Это позволит легко подготовить цвета для смены темы
+:root.light-mode {}
+
+
+//Размеры для разных устройств
+@media (min-width: 1281px) {
+    :root {
+
+        --text-body-m-semibold-size: 16px;
+        --text-body-m-semibold-line-height: 22px;
+        --text-btn-sm-size: 15px;
+        --text-btn-sm-line-height: 20px;
+
+        --spacer: 315px;
+        --spacer-lvl-2: 20px;
+        --spacer-lvl-3: 14px;
+        --spacer-lvl-4: 42px;
+        --spacer-lvl-4: 64px;
+        --spacer-lvl-8: 86px;
+
+        --body-xxl-semibold: 26px;
+        --body-xl-semibold: 22px;
+        --body-l-semibold: 18px;
+        --body-l-medium: 18px;
+        --body-l-medium-italic: 16px;
+        --body-m-semibold: 16px;
+        --body-m-medium: 16px;
+        --body-m-regular: 16px;
+        --body-s-medium: 14px;
+        --body-s-regular: 14px;
+        --body-xs-regular: 16px;
+
+        --h1-font-size: 46px;
+        --h2-font-size: 34px;
+        --h3-font-size: 30px;
+        --h4-font-size: 26px;
+        --h5-font-size: 22px;
+        --h6-font-size: 18px;
+    }
+}
+
+@media (min-width: 834px) and (max-width: 1280px) {
+    :root {
+
+        --text-body-m-semibold-size: 16px;
+        --text-body-m-semibold-line-height: 22px;
+        --text-btn-sm-size: 15px;
+        --text-btn-sm-line-height: 20px;
+
+        --spacer: 40px;
+        --spacer-lvl-2: 18px;
+        --spacer-lvl-3: 14px;
+        --spacer-lvl-4: 38px;
+        --spacer-lvl-8: 74px;
+
+        --body-xxl-semibold: 26px;
+        --body-xl-semibold: 22px;
+        --body-l-semibold: 18px;
+        --body-l-medium: 18px;
+        --body-l-medium-italic: 16px;
+        --body-m-semibold: 16px;
+        --body-m-medium: 16px;
+        --body-m-regular: 16px;
+        --body-s-medium: 14px;
+        --body-s-regular: 14px;
+        --body-xs-regular: 16px;
+
+        --h1-font-size: 46px;
+        --h2-font-size: 34px;
+        --h3-font-size: 30px;
+        --h4-font-size: 26px;
+        --h5-font-size: 22px;
+        --h6-font-size: 18px;
+    }
+
+}

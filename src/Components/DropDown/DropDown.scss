@@ -1,0 +1,39 @@
+.drop-down {
+    display: none;
+    top: 70px;
+    left: 460px;
+    position: absolute;
+    background-color: var(--gray-scale-3);
+    width: 700px;
+    height: 224px;
+    column-gap: 38px;
+    row-gap: 40px;
+    border-radius: 17px;
+    border: 1px solid var(--gray-scale-3);
+    padding: 20px;
+    flex-wrap: wrap;
+    z-index: 10;
+
+    &[data-show] {
+        display: flex;
+    }
+
+    & img {
+        height: 36px;
+        width: 36px;
+    }
+
+    &>div {
+        display: flex;
+        align-items: center;
+        width: 310px;
+        gap: 14px;
+        cursor: pointer;
+
+        &>div {
+            display: block;
+            width: 232px;
+            gap: 4px;
+        }
+    }
+}

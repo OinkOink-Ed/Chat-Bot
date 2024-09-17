@@ -1,0 +1,66 @@
+@media (max-width: 1280px) {
+    .drop-down {
+        left: 140px;
+    }
+}
+
+@media(max-width: 1084px) {
+    .footer {
+        background-image: radial-gradient(30.67% 60.33% at 50% -3.33%, rgba(28, 100, 242, 0.5) 0%, rgba(8, 16, 39, 0) 70.32%),
+            linear-gradient(0deg, #121825, #121825);
+    }
+}
+
+@media(max-width: 834px) {
+    .header {
+
+        &>div {
+            .menu {
+                display: none;
+            }
+        }
+    }
+
+    .chat-description {
+        align-items: center;
+        text-align: center;
+    }
+
+    .chat-header {
+        flex-direction: column;
+    }
+
+    .our-capabilities {
+
+        .card-conteiner {
+            justify-content: center;
+        }
+
+        .card {
+            width: 365px;
+
+        }
+    }
+
+    .midjourney-description {
+        justify-content: center;
+        gap: 30px;
+
+        .description-conteiner {
+            flex-basis: auto;
+            padding: 0px 20px
+        }
+    }
+
+    .footer {
+        height: fit-content;
+        padding: 40px;
+        align-items: normal;
+
+        .footer-conteiner {
+            flex-direction: column;
+            gap: 40px;
+            height: fit-content;
+        }
+    }
+}

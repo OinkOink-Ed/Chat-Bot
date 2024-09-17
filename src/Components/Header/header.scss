@@ -1,0 +1,111 @@
+.header {
+    display: flex;
+    position: relative;
+    height: 80px;
+    background-color: var(--gray-scale-3);
+    border-bottom: 1px solid var(--gray-scale-3);
+    align-items: center;
+    gap: 14px;
+    padding: var(--spacer-lvl-2) var(--spacer) var(--spacer-lvl-2) var(--spacer);
+
+    &>div {
+        display: flex;
+        align-items: center;
+        height: 40px;
+        gap: 24px;
+        flex-grow: 1;
+
+        &>hr {
+            border: 1px solid var(--gray-scale-3);
+            transform: rotate(90);
+            height: 34px;
+        }
+
+        &>a {
+            display: flex;
+            align-items: center;
+
+            & img {
+                cursor: pointer;
+                height: 29px;
+                width: 97px;
+            }
+        }
+
+        & .menu {
+            display: flex;
+            gap: 34px;
+
+            & a:hover {
+
+                &>* {
+                    color: var(--color-Accent-Primary-Light);
+                }
+
+            }
+
+            & .drop {
+                cursor: pointer;
+                display: flex;
+                gap: 8px;
+                align-items: center;
+
+                & svg {
+                    stroke: var(--color-base);
+                    transition: all 0.3s;
+                }
+
+                &:hover {
+                    &>* {
+                        color: var(--color-Accent-Primary);
+                    }
+
+                    & svg {
+                        stroke: var(--color-Accent-Primary);
+                    }
+                }
+            }
+
+            & .drop[data-show] {
+                &>* {
+                    color: var(--color-Accent-Primary-Light);
+                }
+
+                & svg {
+                    stroke: var(--color-Accent-Primary-Light);
+                    transform: rotate(-180deg);
+                    transition: all 0.3s;
+                }
+            }
+        }
+    }
+
+    & .conteiner {
+        display: flex;
+        flex-grow: 0;
+        gap: 34px;
+        align-items: center;
+        text-align: center;
+
+        & .lang {
+            display: flex;
+            gap: 6px;
+            align-items: center;
+            cursor: pointer;
+
+            & svg {
+                stroke: var(--color-base);
+            }
+
+            &:hover {
+                &>* {
+                    color: var(--color-Accent-Primary);
+                }
+
+                & svg {
+                    stroke: var(--color-Accent-Primary);
+                }
+            }
+        }
+    }
+}

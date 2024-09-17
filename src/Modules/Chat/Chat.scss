@@ -1,0 +1,91 @@
+.chat-module-conteiner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 110px;
+    padding-left: var(--spacer);
+    padding-right: var(--spacer);
+    background: linear-gradient(180deg, rgba(15, 33, 65, 0) 0%, #27519B 41.56%, rgba(15, 33, 65, 0) 94.03%);
+}
+
+.chat-content {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    flex-basis: 100%;
+    gap: 10px;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+
+.chat {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--gray-scale-4);
+    height: 593px;
+    flex-grow: 1;
+    border-radius: 24px;
+    flex-basis: 741px;
+    border: 1px solid;
+    border-image-source: linear-gradient(180deg, #363F54 15.42%, rgba(54, 63, 84, 0) 100%);
+
+    & .chat-header {
+        display: flex;
+        border: 1px solid #374151;
+        border-top-left-radius: 24px;
+        border-top-right-radius: 24px;
+        padding: 16px 24px 16px 24px;
+        gap: 14px;
+
+        & .title {
+            display: flex;
+            flex-grow: 1;
+            height: 50px;
+            column-gap: 10px;
+
+            & .bot-name {
+                display: flex;
+                flex-direction: column;
+
+                & :last-child {
+                    color: var(--gray-scale-1);
+                }
+            }
+        }
+
+        & .context {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+    }
+
+    & .input-message {
+        display: flex;
+        padding: var(--spacer-lvl-3) var(--spacer-const) var(--spacer-lvl-3) var(--spacer-const);
+
+        &>form {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            border: 1px solid var(--gray-scale-1);
+            border-radius: 10px;
+            padding: var(--spacer-lvl-3) var(--spacer-const) var(--spacer-lvl-3) var(--spacer-const);
+
+            & .text-area {
+                background: transparent;
+                outline: none;
+                border: none;
+                font-size: 14px;
+                padding: var(--spacer-lvl-3) var(--spacer-const) var(--spacer-lvl-3) var(--spacer-const);
+                width: 100%;
+                resize: none;
+
+                color: var(--gray-scale-1);
+            }
+        }
+
+    }
+}
