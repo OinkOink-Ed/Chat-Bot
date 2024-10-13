@@ -1,17 +1,18 @@
-import { SyntheticEvent } from "react";
+import { KeyboardEvent, MouseEvent } from "react";
 import { ButtonWithIcon } from "../../../../UI/Buttons/ButtonWithIcon";
 
 interface ChatTextAreaProps {
-    handler: (event: SyntheticEvent) => {},
+    mouseHandler?: (event: MouseEvent) => void,
+    keyHandler?: (event: KeyboardEvent) => void,
 }
 
-export default function ChatTextArea({ handler }: ChatTextAreaProps) {
+export default function ChatTextArea({ mouseHandler, keyHandler }: ChatTextAreaProps) {
 
     return (
         <div className="input-message">
             <form id="message" name="gemini">
-                <textarea className="text-area" name="text" id="gemini" placeholder="Cпроси о чем-нибудь..."></textarea>
-                <ButtonWithIcon type="submit" onClick={(event) => handler(event)} size="small" variant="primary" icon={<img src="/icons/send.png"></img>}></ButtonWithIcon>
+                <textarea onKeyDown={keyHandler} className="text-area" name="text" id="gemini" placeholder="Cпроси о чем-нибудь..."></textarea>
+                <ButtonWithIcon type="submit" handler={mouseHandler} size="small" variant="primary" icon={<img src="/icons/send.png"></img>}></ButtonWithIcon>
             </form>
         </div>
     )
